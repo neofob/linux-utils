@@ -11,7 +11,7 @@ RUN apt-get -yq update && \
 	apt-get -yq install --no-install-recommends  ${PKGS}
 
 # We do this so we have non-root user to run uid:gid 1000:1000
-RUN useradd -b /home/common-man common-man && \
+RUN useradd -d /home/common-man common-man && \
 	mkdir -p /home/common-man
 
 RUN chown -R common-man:common-man /home/common-man
