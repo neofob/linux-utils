@@ -1,7 +1,7 @@
-FROM ubuntu:23.04
+FROM ubuntu:24.04
 LABEL maintainer "tuan t. pham" <tuan@vt.edu>
 
-ENV PKGS="ca-certificates coreutils curl git gzip make openssh-client pigz pv tar unzip xz-utils" \
+ENV PKGS="ca-certificates coreutils curl git gzip make openssh-client pigz pv tar unzip xz-utils bc" \
 	DEBIAN_FRONTEND=noninteractive
 
 ENV REPO=https://github.com/neofob/tscripts
